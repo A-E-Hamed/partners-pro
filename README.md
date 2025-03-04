@@ -1,6 +1,6 @@
-# Partners-Pro
+# Partners-Pro Assessment
 
-This project contains both the frontend and backend for the Partners-Pro application.
+This project contains both the frontend and backend for the Partners-Pro Assessment.
 
 ## Prerequisites
 
