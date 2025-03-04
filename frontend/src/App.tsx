@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       <Route path="/home" element={<HomePage />} />
-      <Route path="/auth" element={<AuthPage />} />
+      <Route path="/" element={<AuthPage />} />
     </Routes>
   );
 }

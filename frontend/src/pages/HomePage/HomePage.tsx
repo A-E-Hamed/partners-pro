@@ -13,7 +13,7 @@ const HomePage = () => {
       try {
         const token = localStorage.getItem("token");
         if (!token) {
-          navigate("/auth");
+          navigate("/");
           return;
         }
 
@@ -29,7 +29,7 @@ const HomePage = () => {
         setUserName(response.data.name);
       } catch (error) {
         console.error("Error fetching user data:", error);
-        navigate("/auth");
+        navigate("/");
       } finally {
         setLoading(false);
       }
@@ -41,7 +41,7 @@ const HomePage = () => {
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
-    navigate("/auth");
+    navigate("/");
   };
 
   return (
